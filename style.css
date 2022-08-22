@@ -1,0 +1,48 @@
+.container {
+  display: grid;
+  width: auto;
+  height: auto;
+  padding-top: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
+  grid-template: repeat(2, 1fr) / 2fr repeat(2, 1fr);
+}
+.box {
+  height: auto;
+  width: auto;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 7px;
+}
+
+.a {
+  width: 365px;
+  grid-area: 1/1/2/2;
+  background-color: hsl(263, 55%, 52%);
+}
+
+.b {
+  width: 100px;
+  grid-area: 1/2/2/3;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.c {
+  height: 300px;
+  width: 100px;
+  grid-area: 1/2/-1/4;
+  margin-left: 165px;
+  background-color: hsl(0, 0%, 100%);
+}
+.d {
+  width: 100px;
+  grid-area: 2/1/3/2;
+  background-color: hsl(0, 0%, 100%);
+}
+.e {
+  width: 365px;
+  margin-left: 165px;
+  grid-area: 2/1/3/3;
+  background-color: hsl(219, 29%, 14%);
+}
